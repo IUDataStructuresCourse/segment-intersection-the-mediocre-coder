@@ -5,7 +5,7 @@ import java.util.function.BiPredicate;
  * <p>
  * This class implements a generic height-balanced binary search tree,
  * using the AVL algorithm. Beyond the constructor, only the insert()
- * method needs to be implemented. All other methods are unchanged.
+ * and remove() methods need to be implemented. All other methods are unchanged.
  */
 
 public class AVLTree<K> extends BinarySearchTree<K> {

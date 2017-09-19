@@ -2,8 +2,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiPredicate;
 
-// This class doesn't need height, AVL needs height. -Jeremy
-
 /**
  * TODO: This is your first major task.
  * <p>
