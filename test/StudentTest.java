@@ -454,6 +454,10 @@ public class StudentTest {
         assertEquals(0, avl.height());
     }
 
+    /*
+     * Add a test for insert and remove from an AVL tree with 100 keys that are randomly generated.
+     */
+
     /**********************************************************************************
      * When you've reached this point, you're ready to replace the BST with AVL in
      * the Driver.

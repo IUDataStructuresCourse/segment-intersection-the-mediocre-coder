@@ -133,7 +133,8 @@ below the current segment.
   how the algorithm works.
 
 * `StudentTest` (in the `test` directory) is the suite of unit tests that you will use to guide your
-  development work. Feel free to add additional tests.
+  development work. Feel free to add additional tests. At a minimum, add four tests, for
+  insert and remove on a BST and an AVL tree with at least 100 keys that are randomly generated.
 
 * `Tree` [read-only] is an interface that describes the Tree ADT. In
   this same file, you will find the interface definition for Location,
