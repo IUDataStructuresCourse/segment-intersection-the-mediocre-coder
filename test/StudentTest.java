@@ -267,8 +267,9 @@ public class StudentTest {
             assertFalse(avl.contains(key));
         }
         assertTrue(avl.isEmpty());
+
         assertEquals(0, avl.size());
-        assertEquals(0, avl.height());
+        assertEquals(-1, avl.height());
         assertTrue(verifyParentPointers(avl.root));
     }
 
@@ -324,8 +325,11 @@ public class StudentTest {
     public void LRtinyAVL() {
         BinarySearchTree<Integer> avl = new AVLTree<>((Integer x, Integer y) -> x < y);
         int[] a = new int[]{3, 1, 2};
-        for (Integer key : a)
+        for (Integer key : a) {
             avl.insert(key);
+            System.out.println(avl.search(key).height);
+        }
+
         // Check size
         assertEquals(3, avl.size());
         // Check keys
@@ -440,6 +444,7 @@ public class StudentTest {
         }
         int n = a.length;
         for (Integer key : a) {
+
             avl.remove(key);
             n--;
             assertEquals(n, avl.size());
@@ -449,9 +454,10 @@ public class StudentTest {
             assertTrue(verifyOrderingProperty(avl.root, avl.lessThan));
             assertTrue(verifyHeights(avl.root));
             assertTrue(verifyAVL(avl.root));
+            System.out.println(key);
         }
         assertNull(avl.root);
-        assertEquals(0, avl.height());
+        assertEquals(-1, avl.height());
     }
 
     /*
